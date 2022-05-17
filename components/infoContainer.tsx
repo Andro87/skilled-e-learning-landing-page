@@ -6,7 +6,10 @@ import { data } from "../data/data";
 
 const InfoContainer: React.FunctionComponent = () => {
     return (
-        <article className={styles.info_container}>
+        <section
+            className={styles.info_container}
+            aria-label="more informations"
+        >
             <div className={styles.info_wrap}>
                 <div className={styles.info_heading}>
                     <h2> Check out our most popular courses!</h2>
@@ -20,7 +23,7 @@ const InfoContainer: React.FunctionComponent = () => {
                     />
                 ))}
             </div>
-        </article>
+        </section>
     );
 };
 
