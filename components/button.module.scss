@@ -1,0 +1,50 @@
+@import "../styles/variables.module.scss";
+
+.button {
+    font-family: "plusjakarta";
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: var(--White);
+    border: none;
+    border-radius: 28px;
+    padding: 10px 24px;
+    transition: all 0.3s ease-in;
+    &:hover {
+        cursor: pointer;
+    }
+    @media screen and(max-width:$smalldevice) {
+        font-size: 0.8rem;
+    }
+}
+.blue {
+    background: var(--Blue);
+
+    &:hover {
+        background: var(--LightBlue);
+    }
+}
+.pink {
+    background: linear-gradient(to bottom, var(--Lg1Start), var(--LgEnd));
+    transition: all 0.3s ease-in;
+    opacity: 1;
+    &:hover {
+        background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0.5)
+            ),
+            linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    }
+}
+.light_pink {
+    background: linear-gradient(to bottom, var(--Lg2Start), var(--LgEnd));
+    &:hover {
+        background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0.5)
+            ),
+            linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+    }
+}

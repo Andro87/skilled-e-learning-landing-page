@@ -1,0 +1,20 @@
+@import "../styles/variables.module.scss";
+
+.header {
+    padding: 16px 16px 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    @media screen and (min-width: $tablet) {
+        padding: 24px 40px 0;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 80%;
+        max-width: 75rem;
+        padding: initial;
+        padding-top: 24px;
+        margin: auto;
+    }
+}
