@@ -1,9 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Header from "../components/header";
-import Main from "../components/main";
-import InfoContainer from "../components/infoContainer";
-import Footer from "../components/footer";
+import { Header, Main, InfoContainer, Footer } from "components";
+
 export default function Home() {
     return (
         <div className={styles.main_container}>

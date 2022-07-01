@@ -1,11 +1,11 @@
-@import "../styles/variables.module.scss";
+@use "styles/helpers" as *;
 
 .info_container {
     padding: 66px 16px 80px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $medium) {
         padding: 86px 40px;
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $large) {
         width: 80%;
         max-width: 75rem;
         padding: initial;
@@ -17,12 +17,12 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $medium) {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 11px;
         row-gap: 56px;
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $large) {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
         row-gap: 80px;
@@ -30,9 +30,9 @@
 }
 .info_heading {
     border-radius: 10px;
-    background: linear-gradient(to bottom, var(--Lg1Start), var(--LgEnd));
+    background: linear-gradient(to bottom, var(--lg1-start), var(--lg-end));
     padding: 24px 28px 32px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $medium) {
         padding: 56px 22px 32px 32px;
     }
 }

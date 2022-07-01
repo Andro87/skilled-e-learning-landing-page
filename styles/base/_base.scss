@@ -1,0 +1,21 @@
+@use "../helpers/breakpoints" as *;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "plusjakarta";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--grey);
+    @media screen and (min-width: $large) {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
