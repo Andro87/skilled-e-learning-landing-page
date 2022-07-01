@@ -1,6 +1,6 @@
-export { Button } from "./button/button";
-export { Footer } from "./footer/footer";
-export { Header } from "./header/header";
-export { Info } from "./info/info";
-export { InfoContainer } from "./infoContainer/infoContainer";
-export { Main } from "./main/main";
+export { Button } from "./button/Button";
+export { Footer } from "./footer/Footer";
+export { Header } from "./header/Header";
+export { Info } from "./info/Info";
+export { InfoContainer } from "./infoContainer/InfoContainer";
+export { Main } from "./main/Main";
