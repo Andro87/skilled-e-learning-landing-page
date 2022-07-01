@@ -1,15 +1,15 @@
-@import "../styles/variables.module.scss";
+@use "styles/helpers" as *;
 .main {
     padding: 0 16px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $medium) {
         padding: 0;
         padding-left: 40px;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $large) {
         width: 80%;
         max-width: 75rem;
         padding: initial;
@@ -17,17 +17,17 @@
     }
 }
 .main_info {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $medium) {
         padding: 100px 0;
         max-width: 29rem;
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $large) {
         padding: 180px 0;
     }
     p {
         margin-top: 26px;
         margin-bottom: 24px;
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: $large) {
             margin-top: 29px;
             margin-bottom: 40px;
         }
@@ -39,21 +39,21 @@
     margin-top: 40px;
     img {
         max-width: 100%;
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $medium) {
             display: none;
         }
     }
     &::after {
         position: relative;
-        @media screen and (min-width: $tablet) {
-            content: url("../public/images/image-hero-tablet.png");
+        @media screen and (min-width: $medium) {
+            content: url("../../public/images/image-hero-tablet.png");
             position: absolute;
             top: -180px;
             right: -300px;
         }
 
-        @media screen and (min-width: $desktop) {
-            content: url("../public/images/image-hero-desktop.png");
+        @media screen and (min-width: $large) {
+            content: url("../../public/images/image-hero-desktop.png");
             position: absolute;
             top: -250px;
             right: -500px;

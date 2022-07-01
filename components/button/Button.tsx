@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./button.module.scss";
+import styles from "./Button.module.scss";
 
 interface Props {
     readonly color: string;
 }
 
-const Button: React.FunctionComponent<Props> = props => {
+export const Button: React.FunctionComponent<Props> = props => {
     const { color } = props;
     return (
         <button
@@ -17,5 +17,3 @@ const Button: React.FunctionComponent<Props> = props => {
         </button>
     );
 };
-
-export default Button;

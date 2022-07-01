@@ -1,12 +1,12 @@
 import React, { ReactNode } from "react";
-import styles from "./info.module.scss";
+import styles from "./Info.module.scss";
 
 interface Props {
     readonly icon: ReactNode;
     readonly header: string;
     readonly paragraph: string;
 }
-const Info: React.FunctionComponent<Props> = props => {
+export const Info: React.FunctionComponent<Props> = props => {
     const { icon, header, paragraph } = props;
     return (
         <div className={styles.info}>
@@ -17,5 +17,3 @@ const Info: React.FunctionComponent<Props> = props => {
         </div>
     );
 };
-
-export default Info;

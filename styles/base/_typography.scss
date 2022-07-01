@@ -1,0 +1,53 @@
+@use "../helpers/breakpoints" as *;
+
+@font-face {
+    font-family: "plusjakarta";
+    src: url("../../public/fonts/PlusJakartaSans-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "plusjakarta";
+    src: url("../../public/fonts/PlusJakartaSans-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "plusjakarta";
+    src: url("../../public/fonts/PlusJakartaSans-Medium.ttf");
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "plusjakarta";
+    font-weight: 800;
+    color: var(--blue);
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    @media screen and (min-width: $large) {
+        font-size: 3.5rem;
+        line-height: 4.375rem;
+    }
+}
+h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--white);
+    @media screen and (min-width: $large) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+    @media screen and (min-width: $large) {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+}

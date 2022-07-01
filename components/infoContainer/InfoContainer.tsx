@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "./infoContainer.module.scss";
-import Info from "./info";
+import styles from "./InfoContainer.module.scss";
+import { Info } from "components";
+import { data } from "../../data/data";
 
-import { data } from "../data/data";
-
-const InfoContainer: React.FunctionComponent = () => {
+export const InfoContainer: React.FunctionComponent = () => {
     return (
         <section
             className={styles.info_container}
@@ -26,5 +25,3 @@ const InfoContainer: React.FunctionComponent = () => {
         </section>
     );
 };
-
-export default InfoContainer;

@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "./button";
-import styles from "./main.module.scss";
+import { Button } from "components";
+import styles from "./Main.module.scss";
 
-const Main: React.FunctionComponent = () => {
+export const Main: React.FunctionComponent = () => {
     return (
         <main className={styles.main}>
             <div className={styles.main_info}>
@@ -20,5 +20,3 @@ const Main: React.FunctionComponent = () => {
         </main>
     );
 };
-
-export default Main;

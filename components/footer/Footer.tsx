@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./footer.module.scss";
-import LightLogo from "../svgs/logo-light.svg";
-import Button from "./button";
+import styles from "./Footer.module.scss";
+import LightLogo from "../../svgs/logo-light.svg";
+import { Button } from "components";
 
-const Footer: React.FunctionComponent = () => {
+export const Footer: React.FunctionComponent = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footer_container}>
@@ -13,5 +13,3 @@ const Footer: React.FunctionComponent = () => {
         </footer>
     );
 };
-
-export default Footer;

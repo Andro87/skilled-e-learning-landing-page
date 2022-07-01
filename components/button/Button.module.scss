@@ -1,11 +1,11 @@
-@import "../styles/variables.module.scss";
+@use "styles/helpers" as *;
 
 .button {
     font-family: "plusjakarta";
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.75rem;
-    color: var(--White);
+    color: var(--white);
     border: none;
     border-radius: 28px;
     padding: 10px 24px;
@@ -13,20 +13,18 @@
     &:hover {
         cursor: pointer;
     }
-    @media screen and(max-width:$smalldevice) {
+    @media screen and(max-width:$small) {
         font-size: 0.8rem;
     }
 }
 .blue {
-    background: var(--Blue);
-
+    background: var(--blue);
     &:hover {
-        background: var(--LightBlue);
+        background: var(--lightblue);
     }
 }
 .pink {
-    background: linear-gradient(to bottom, var(--Lg1Start), var(--LgEnd));
-    transition: all 0.3s ease-in;
+    background: linear-gradient(to bottom, var(--lg1-start), var(--lg-end));
     opacity: 1;
     &:hover {
         background: linear-gradient(
@@ -38,7 +36,7 @@
     }
 }
 .light_pink {
-    background: linear-gradient(to bottom, var(--Lg2Start), var(--LgEnd));
+    background: linear-gradient(to bottom, var(--lg2-start), var(--lg-end));
     &:hover {
         background: linear-gradient(
                 0deg,
